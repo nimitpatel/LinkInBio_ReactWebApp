@@ -1,0 +1,22 @@
+{
+  "name": "mylinks",
+  "version": "1.0.0",
+  "description": "link in bio",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "link",
+    "linktree"
+  ],
+  "author": "Nimit Patel @nimit.codes",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1"
+  }
+}
