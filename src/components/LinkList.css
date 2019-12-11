@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    width: max-content;
+    min-width: 500px;
+    height: 50px;
+    border: 1px dotted black;
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.action {
+    width: max-content;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between; 
+} 
+/*
+.cursor {
+    cursor: ;
+}
+*/
+
+@media only screen and (max-width: 768px) {
+    .container { 
+        min-width: 280px;
+        width: 320px;
+        min-height: min-content; 
+    }
+}

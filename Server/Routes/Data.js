@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
         url: req.body.url
     });
 
-    //console.log(req.body);
+    console.log(req.body);
 
     try {
         const savedData = await link.save();
@@ -31,22 +31,23 @@ router.post('/', async (req, res) => {
 });
 
 // delete link
+
 router.delete('/:id', async (req, res) => {
-    try {
-        const deleLink = await Links.remove({ _id: req.params.id });
-        res.json(deleLink);
-    } catch (err) {
+    Links.findByIdAndDelete(req.params.id)
+    .then(() => (res.json(req.params))) 
+    .catch (err => {
         res.json({ message: err });
-    }
+    })
 });
 
 // update link
 router.patch('/:id', async (req, res) => {
     try {
         const updateLink = await Links.updateMany(
-            { _id: req.params.id }, 
-            { $set: { title: req.body.title, url: req.body.url } 
-        });
+            { _id: req.params.id },
+            {
+                $set: { title: req.body.title, url: req.body.url }
+            });
         res.json(updateLink);
     } catch (err) {
         res.json({ message: err });

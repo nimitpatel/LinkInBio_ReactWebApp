@@ -1,5 +1,7 @@
 import React from 'react';
-import List from './List';
+import LinkList from './LinkList';
+import './Links.css'
+import AddLink from './AddLink';
 
 class Links extends React.Component {
     render() {
@@ -7,11 +9,19 @@ class Links extends React.Component {
         const links = this.props.links.map(link => {
             //console.log(link);
             return (
-                <List key={link._id} list={link} />
+                <LinkList 
+                    key={link._id} 
+                    link={link} 
+                    delete={this.props.delete} 
+                    onLinkSelect={this.props.onLinkSelect} 
+                />
             )
         })
         return (
-            <h1>{links}</h1>
+            <>
+                <AddLink />
+                <div className="links">{links}</div>
+            </>
         );
     }
 }

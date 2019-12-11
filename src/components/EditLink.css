@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-group { 
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row;
+    margin: auto;
+}
+
+.button-group { 
+    display: flex;
+    justify-content: center;  
+}
