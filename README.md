@@ -31,9 +31,9 @@ npm run dev
 
 ### Todos
 
-[ ] Improve UI
-[ ] Add Night Mode
-[ ] Add More Features
+- [ ] Improve UI
+- [ ] Add Night Mode
+- [ ] Add More Features
 
 ## Contributing
 
