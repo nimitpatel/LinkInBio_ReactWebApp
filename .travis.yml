@@ -1,1 +1,16 @@
 language: node_js
+
+node_js:
+  - 10.16.0
+
+cache: npm
+
+before_install:
+  - cd ./Server
+  - npm install
+
+install:
+  - npm install
+
+script:
+  - npm run dev
