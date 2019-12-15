@@ -8,8 +8,7 @@ cache: npm
 before_install:
   - cd ./Server
   - npm install
-
-install:
+  - cd ../
   - npm install
 
 script:
