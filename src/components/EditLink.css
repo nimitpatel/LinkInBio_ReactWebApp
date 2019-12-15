@@ -1,21 +1,60 @@
-.form {
+.form form {
+    width: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
+    margin: auto;
 }
 
 .form-group { 
     width: 250px;
-    padding: 10px;
+    margin: 10px;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     flex-direction: row;
-    margin: auto;
+}
+
+.form-group label, input {
+    padding: 5px 12.5px;
+    color: #fff;
+}
+
+.form-group input {
+    border: 1px solid #fff;
+    background: transparent;
 }
 
 .button-group { 
     display: flex;
     justify-content: center;  
+    margin: 10px;
+}
+
+.button-group button {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 6px 12.5px;
+}
+
+.a { 
+    background: transparent; 
+    width: max-content;
+    padding: 6px 12.5px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 680px) {
+    form {
+        margin: 0;
+    }
+
+    .form form {
+        flex-direction: column;
+    }
 }

@@ -43,7 +43,7 @@ class EditLink extends React.Component {
                     <Input label="Title" onChange={this.onTitleChange } value={this.state.title} />
                     <Input label="Url" onChange={this.onUrlChange } value={this.state.url} />
                     <Button value="Update" />
-                    <Button value="Back" />
+                    <a className="a" href="/mylinks" >Back</a>
                 </form> 
             </div>
         )

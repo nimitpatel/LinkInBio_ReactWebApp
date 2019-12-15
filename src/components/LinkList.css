@@ -10,28 +10,24 @@
     width: max-content;
     min-width: 500px;
     height: 50px;
-    border: 1px dotted black;
+    border: 1px solid white;
 }
 
 .link {
+    margin: 0;
     padding: 10px;
     text-decoration: none;
     color: #000;
     text-align: center;
     font-size: 1.5rem;
+    color: white;
 }
 
 .action {
     width: max-content;
-    padding: 25px;
     display: flex;
     justify-content: space-between; 
 } 
-/*
-.cursor {
-    cursor: ;
-}
-*/
 
 @media only screen and (max-width: 768px) {
     .container { 

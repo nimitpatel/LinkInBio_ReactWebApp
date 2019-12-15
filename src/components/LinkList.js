@@ -11,7 +11,7 @@ const LinkList = (props) => {
     return (
         <div className="container">
             <div className="text">
-                <h2 className="link cursor">{title.toUpperCase()}</h2>
+                <h2 className="link">{title.toUpperCase()}</h2>
             </div>
             <div className="action">
                 <Link className="link" to='/edit' onClick={() => props.onLinkSelect(props.link)}><i class="far fa-edit"></i></Link>

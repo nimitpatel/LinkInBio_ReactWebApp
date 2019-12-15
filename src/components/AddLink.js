@@ -42,7 +42,8 @@ export class AddLink extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <Input label="Title" onChange={this.onTitleChange } value={this.state.title} />
                     <Input label="Url" onChange={this.onUrlChange } value={this.state.url} />
-                    <Button  value="Add" />   
+                    <Button  value="Add" />
+                    <a className="a" href="/" >Back</a>
                 </form> 
             </div> 
         )
